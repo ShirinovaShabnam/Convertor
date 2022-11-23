@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href=""><img src="./img/logo.png" alt="logo" /></a>
+      </div>
+      <div class="myNav">
+        <li class="myLi">BANK</li>
+        <li>BUSINESS</li>
+        <li>INVESTMENTS</li>
+        <li>INSURANCE</li>
+        <li>MOBILE</li>
+        <li>TRAVEL</li>
+        <li>ENTERTAINMENT</li>
+      </div>
+      <div class="myNewNav">
+        <div class="spanNav">
+          <span class="newSpan-myNav"></span>
+          <span class="newSpan-myNav"></span>
+          <span class="newSpan-myNav"></span>
+        </div>
+        <div class="login">
+          <a href="">SIGN IN</a>
+        </div>
+      </div>
+    </header>
+    <div class="cont">
+      <h1>Currency converter online</h1>
+      <div class="myConv-space">
+        <div class="convert">
+          <!--left-->
+          <div class="choose-convert">
+            <h2>I have</h2>
+            <div class="buttons-convert left-buttons">
+              <button value="RUB" class="RUB btn-active">RUB</button>
+              <button value="USD" class="USD">USD</button>
+              <button value="EUR" class="EUR">EUR</button>
+              <button value="GBP" class="GBP">GBP</button>
+            </div>
+          </div>
+          <div class="input convert">
+            <input type="text" placeholder="Type value..." />
+            <p class="leftVal"></p>
+          </div>
+        </div>
+        <!--right-->
+        <div class="convRight">
+          <div class="choose-convRight">
+            <h2>I want to buy</h2>
+            <div class="buttons-convert right-buttons">
+              <button value="RUB" class="RUB">RUB</button>
+              <button value="USD" class="USD btn-active">USD</button>
+              <button value="EUR" class="EUR">EUR</button>
+              <button value="GBP" class="GBP">GBP</button>
+            </div>
+          </div>
+          <div class="input convRight">
+            <input type="text" placeholder="Type value..." />
+            <p class="rightVal"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/imask.js"></script>
+    <script src="./js/converter.js"></script>
+    
+  </body>
+</html>

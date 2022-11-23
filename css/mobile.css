@@ -1,0 +1,77 @@
+@media only screen and (min-width : 300px) and (max-width : 810px){
+  .cont .myConv-space{
+    height: 400px;
+    width: 423px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }    
+  
+  .cont h1{
+    width: 387px;
+    font-size: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .convRight{
+    margin-bottom: 15px;
+  }
+  
+  header .myNav{
+    height: 100vh;
+    width: 100%;
+    font-size: 32px;
+    position: absolute;
+    left: -100%;
+    gap: 0;
+    row-gap: 18px;
+    top: 45px;
+    flex-direction: column;
+    background-color: #f5f5f6;
+    text-align: center;
+    transition: .3s;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  
+  header .myNav li{
+    font-size: 16px;
+  }
+     
+  header .myNav.active{
+    justify-content: flex-start;
+    left: 0;
+  } 
+  
+  .spanNav{
+    display: block;
+  }    
+  
+  .mobile{
+    display: flex;
+    column-gap: 30px;
+  }
+  
+  .spanNav.active .newSpan-myNav:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .spanNav.active .newSpan-myNav:nth-child(2){
+    opacity: 0;
+  }
+  
+  .spanNav.active .newSpan-myNav:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .myNewNav{
+    display: flex;
+    column-gap: 15px;
+  }
+  }
+  
+  
+  
+  
